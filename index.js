@@ -42,7 +42,7 @@ smtpTransporter.sendMail(mailOptions,(error,response)=>{
 smtpTransporter.close()
  
 })
-const PORT =process.env.PORT||3001;
+const PORT =process.env.PORT||3001|| 'https://sheltered-forest-40129.herokuapp.com/';
 app.listen(PORT,()=>{
     console.log(`server starting at port ${PORT}`)
 })

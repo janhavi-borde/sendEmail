@@ -29,7 +29,7 @@ class Form extends Component {
             email:this.state.email,
             message:this.state.message
         }
-        axios.post('/api/forma',data)
+        axios.post('https://sheltered-fortress-08636.herokuapp.com/api/forma',data)
         .then(res=>{
             this.setState({
                 sent:true,
